@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Why Would I Know This? - Play</title>
+    <link rel="stylesheet" href="style.css/style.css"> 
+    <script src="Trivia.js" defer></script></head>
+<body>
+
+    <header>
+        <h1>Why Would I Know This?</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Trivia.html">Play Game</a>
+            <a href="Rankings.html">Rankings</a>        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Trivia</h2>
+
+        <p id="question-number">Question 1</p>
+        <h3 id="question"> Finding Random Question...</h3>
+
+        <div id="answers">
+            <button class="answer-button" onclick="checkAnswer(0)"></button>
+            <button class="answer-button" onclick="checkAnswer(1)"></button>
+            <button class="answer-button" onclick="checkAnswer(2)"></button>
+            <button class="answer-button" onclick="checkAnswer(3)"></button>
+        </div>
+
+        <p id="feedback"></p>
+        <p id="score">Score: 0</p>
+
+        <button id="next-button" class="button" onclick="nextQuestion()" hidden>
+            Next Question
+        </button>
+
+        <button id="restart-button" class="button" onclick="restartGame()" hidden>
+            Play Again
+        </button>
+    </main>
+
+</body>
+</html>
