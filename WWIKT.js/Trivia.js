@@ -54,12 +54,16 @@ const questions = [
     }
 ];
 
-// Game variables
+
+
 let currentQuestion = 0;
 let score = 0;
 let answered = false;
 
-// Display the current question
+
+
+
+
 function showQuestion() {
     answered = false;
 
@@ -84,7 +88,7 @@ function showQuestion() {
     document.getElementById("score").textContent = "Score: " + score;
 }
 
-// Check the selected answer
+
 function checkAnswer(answerIndex) {
     if (answered) {
         return;
@@ -95,7 +99,11 @@ function checkAnswer(answerIndex) {
     const correctAnswer = questions[currentQuestion].correct;
     const buttons = document.querySelectorAll(".answer-button");
 
-    // Disable all answers after a selection
+
+
+
+
+
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
     }
@@ -110,7 +118,13 @@ function checkAnswer(answerIndex) {
             questions[currentQuestion].answers[correctAnswer] + ".";
     }
 
-    // Highlight the correct answer
+   
+
+
+
+
+
+    
     buttons[correctAnswer].style.backgroundColor = "#b8efc0";
 
     document.getElementById("score").textContent = "Score: " + score;
@@ -126,7 +140,6 @@ function checkAnswer(answerIndex) {
     }
 }
 
-// Move to the next question
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -134,12 +147,10 @@ function nextQuestion() {
     }
 }
 
-// Restart the entire game
 function restartGame() {
     currentQuestion = 0;
     score = 0;
     showQuestion();
 }
 
-// Start the game when the page loads
 showQuestion();

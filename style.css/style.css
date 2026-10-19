@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #f4f0ff;
     color: #29233d;
     margin: 0;
@@ -87,10 +87,4 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* Footer */
-footer {
-    background-color: #6c4ab6;
-    color: white;
-    padding: 15px;
-}
 

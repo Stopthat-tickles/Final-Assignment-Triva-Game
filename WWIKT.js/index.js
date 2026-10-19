@@ -1,7 +1,6 @@
 
-// Display a welcome message on the home page
 document.getElementById("welcome-message").textContent =
-    "Are you ready to challenge yourself?";
+    "Are you ready to say "Why would I know this?";
 
 
 function showTip() {
